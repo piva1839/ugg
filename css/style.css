@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+    max-width: 2570px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.clearfix::after {
+  content: "";
+	display: table;
+	clear: both;
+}
