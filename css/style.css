@@ -13,3 +13,51 @@
 	display: table;
 	clear: both;
 }
+
+@font-face {
+	font-family: "CopperPennyDTPNormal";
+	src: url("fonts/CopperPennyDTPNormal.ttf");
+}
+/* font-family: "CopperPennyDTPNormal", sans-serif; */
+
+@font-face {
+	font-family: "MetaPro-BlackItalic";
+	src: url("fonts/MetaPro-BlackItalic.ttf");
+}
+/* font-family: "MetaPro-BlackItalic", sans-serif; */
+
+@font-face {
+	font-family: "MetaPro-Bold";
+	src: url("fonts/MetaPro-Bold.otf");
+}
+/* font-family: "MetaPro-Bold", sans-serif; */
+
+@font-face {
+	font-family: "MetaPro-BoldItalic";
+	src: url("fonts/MetaPro-BoldItalic.otf");
+}
+/* font-family: "MetaPro-BoldItalic", sans-serif; */
+
+@font-face {
+	font-family: "MetaPro-Normal";
+	src: url("fonts/MetaPro-Normal.otf");
+}
+/* font-family: "MetaPro-Normal", sans-serif; */
+
+@font-face {
+	font-family: "MetaPro-NormalItalic";
+	src: url("fonts/MetaPro-NormalItalic.ttf");
+}
+/* font-family: "MetaPro-NormalItalic", sans-serif; */
+
+@font-face {
+	font-family: "MuseoSansCyrl";
+	src: url("fonts/MuseoSansCyrl.otf");
+}
+/* font-family: "MuseoSansCyrl", sans-serif; */
+
+@font-face {
+	font-family: "NeoSansProBold";
+	src: url("fonts/NeoSansProBold.ttf");
+}
+/* font-family: "NeoSansProBold", sans-serif; */
