@@ -16,48 +16,48 @@
 
 @font-face {
 	font-family: "CopperPennyDTPNormal";
-	src: url("fonts/CopperPennyDTPNormal.ttf");
+	src: url("fonts/CopperPennyDTPNormal.ttf") format("truetype");
 }
 /* font-family: "CopperPennyDTPNormal", sans-serif; */
 
 @font-face {
 	font-family: "MetaPro-BlackItalic";
-	src: url("fonts/MetaPro-BlackItalic.ttf");
+	src: url("fonts/MetaPro-BlackItalic.ttf") format("truetype");
 }
 /* font-family: "MetaPro-BlackItalic", sans-serif; */
 
 @font-face {
 	font-family: "MetaPro-Bold";
-	src: url("fonts/MetaPro-Bold.otf");
+	src: url("fonts/MetaPro-Bold.otf") format("truetype");
 }
 /* font-family: "MetaPro-Bold", sans-serif; */
 
 @font-face {
 	font-family: "MetaPro-BoldItalic";
-	src: url("fonts/MetaPro-BoldItalic.otf");
+	src: url("fonts/MetaPro-BoldItalic.otf") format("truetype");
 }
 /* font-family: "MetaPro-BoldItalic", sans-serif; */
 
 @font-face {
 	font-family: "MetaPro-Normal";
-	src: url("fonts/MetaPro-Normal.otf");
+	src: url("fonts/MetaPro-Normal.otf") format("truetype");
 }
 /* font-family: "MetaPro-Normal", sans-serif; */
 
 @font-face {
 	font-family: "MetaPro-NormalItalic";
-	src: url("fonts/MetaPro-NormalItalic.ttf");
+	src: url("fonts/MetaPro-NormalItalic.ttf") format("truetype");
 }
 /* font-family: "MetaPro-NormalItalic", sans-serif; */
 
 @font-face {
 	font-family: "MuseoSansCyrl";
-	src: url("fonts/MuseoSansCyrl.otf");
+	src: url("fonts/MuseoSansCyrl.otf") format("truetype");
 }
 /* font-family: "MuseoSansCyrl", sans-serif; */
 
 @font-face {
 	font-family: "NeoSansProBold";
-	src: url("fonts/NeoSansProBold.ttf");
+	src: url("fonts/NeoSansProBold.ttf") format("truetype");
 }
 /* font-family: "NeoSansProBold", sans-serif; */
