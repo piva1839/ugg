@@ -61,3 +61,37 @@
 	src: url("fonts/NeoSansProBold.ttf") format("truetype");
 }
 /* font-family: "NeoSansProBold", sans-serif; */
+
+.main-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.main-atributes {
+	width: 640px;
+	border: 1px solid red;
+}
+
+.shop-logo,
+.shop-name {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.main-search {
+	width: 520px;
+	border: 1px solid red;
+}
+
+.user-iterface {
+	width: 1390px;
+	border: 1px solid red;
+}
+
+.shop-time,
+.shop-phone,
+.shop-call,
+.main-cart {
+	display: inline-block;
+}
