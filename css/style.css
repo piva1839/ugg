@@ -2,11 +2,13 @@
   box-sizing: border-box;
 }
 
+/*
 .container {
     max-width: 2570px;
     margin: 0 auto;
     padding: 0 10px;
 }
+*/
 
 .clearfix::after {
   content: "";
@@ -62,21 +64,40 @@
 }
 /* font-family: "NeoSansProBold", sans-serif; */
 
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+
 .main-info {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	
+	padding: 0 10px;
 }
 
 .main-atributes {
 	width: 640px;
+	margin: 0;
+	padding: 0;
+	
 	border: 1px solid red;
 }
 
 .shop-logo,
 .shop-name {
 	display: inline-block;
-	vertical-align: middle;
+	vertical-align: top;
 }
 
 .main-search {
@@ -89,9 +110,161 @@
 	border: 1px solid red;
 }
 
+.shop-contacts {
+	margin: 0;
+	padding: 0;
+}
+
 .shop-time,
 .shop-phone,
 .shop-call,
 .main-cart {
 	display: inline-block;
+}
+
+.header-menu {
+	padding: 0 10px;
+}
+
+.main-menu {
+	margin: 0;
+	padding: 0;
+}
+
+.main-menu li {
+	display: inline-block;
+	
+	vertical-align: top;
+}
+
+.global-filter {
+	padding: 0 10px;
+}
+
+.global-women,
+.global-men,
+.global-children {
+	display: inline-block;
+	
+	vertical-align: top;
+}
+
+.main-popular {
+	background: #f8f8f8;
+}
+
+.items {
+	display: flex;
+	flex-wrap: wrap;
+	
+	margin: 0 -15px;
+}
+
+.item-card {
+	width: calc(100% / 5 - 50px);
+	min-width: 314px;
+	margin: 0 25px 50px;
+	
+	background: #ffffff;	
+	
+	text-align: center;
+}
+
+.item-card ul {
+	margin: 0;
+	padding: 0;
+}
+
+.item-card li {
+	list-style-type: none;
+}
+
+.main-about {
+	background: #ffffff;
+}
+
+.main-about-inner {
+	max-width: 1350px;
+	margin: 0 auto;
+	padding: 0 10px;
+	
+	background: #ffffff;
+}
+
+footer {	
+	background: #ffffff;
+	border-bottom: 20px solid red;
+}
+
+.footer-inner {
+	display: flex;
+	justify-content: space-between;
+	
+	max-width: 1350px;
+	margin: 0 auto;
+	padding: 0 10px;
+	
+	background: #ffffff;
+}
+
+.socials,
+.sub-catalog,
+.sub-additionally,
+.sub-contacts {
+	width: calc(100% / 4);
+}
+
+.socials ul,
+.sub-catalog ul,
+.sub-additionally ul,
+.sub-contacts ul {
+	margin: 0;
+	padding: 0;
+}
+
+.socials li,
+.sub-catalog li,
+.sub-additionally li,
+.sub-contacts li {
+	list-style-type: none;
+}
+
+.socials {
+	width: 100%;
+	
+	background: #e4e4e4;
+	
+	text-align: center;
+}
+
+.socials li {
+	display: inline-block;
+}
+
+@media screen and (max-width: 1816px) {
+	.item-card {
+	width: calc(100% / 4 - 50px);
+	min-width: 314px;
+	}
+}
+
+@media screen and (max-width: 1453px) {
+	.item-card {
+	width: calc(100% / 3 - 50px);
+	min-width: 314px;
+	}
+}
+
+@media screen and (max-width: 1085px) {
+	.item-card {
+	width: calc(100% / 2 - 50px);
+	min-width: 314px;
+	}
+}
+
+@media screen and (max-width: 722px) {
+	.item-card {
+	width: calc(100% / 1 - 50px);
+	min-width: 314px;
+	}
 }
