@@ -86,40 +86,53 @@ p {
 	padding: 0 10px;
 }
 
-.main-atributes {
-	width: 640px;
-	margin: 0;
-	padding: 0;
-	
-	border: 1px solid red;
-}
-
 .shop-logo,
-.shop-name {
-	display: inline-block;
-	vertical-align: top;
-}
-
-.main-search {
-	width: 520px;
-	border: 1px solid red;
-}
-
-.user-iterface {
-	width: 1390px;
-	border: 1px solid red;
-}
-
-.shop-contacts {
-	margin: 0;
-	padding: 0;
-}
-
+.shop-name,
+.main-search,
 .shop-time,
 .shop-phone,
 .shop-call,
 .main-cart {
-	display: inline-block;
+	min-height: 80px;
+	
+	border: 1px solid red;
+}
+
+.shop-logo {
+	padding: 0 33px 0 140px;
+}
+
+.shop-name {
+	padding: 0 33px;
+	
+	font-family: "MetaPro-Bold", sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #8d8d8d;
+}
+
+.main-search {
+	padding: 0 170px 0 33px;
+	
+	font-family: "NeoSansProBold", sans-serif;
+	color: #c5c5c5;
+	font-size: 16px;
+}
+
+.shop-time {
+	padding: 0 36px 0 110px;
+}
+
+.shop-phone {
+	padding: 0 64px 0 36px;
+}
+
+.shop-call {
+	padding: 0 62px;
+}
+
+.main-cart {
+	padding: 0 77px 0 143px;
 }
 
 .header-menu {
