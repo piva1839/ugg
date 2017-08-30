@@ -82,8 +82,10 @@ p {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	
-	padding: 0 10px;
+  
+  padding: 0 10px;
+  
+  text-align: center;
 }
 
 .shop-logo,
@@ -93,9 +95,24 @@ p {
 .shop-phone,
 .shop-call,
 .main-cart {
-	min-height: 80px;
-	
-	border: 0px solid red;
+  height: 100px;
+  border: 0px solid red;
+}
+
+.shop-logo {
+  width: 12.5%;
+  padding: 14px 0 10px;
+}
+
+.shop-name {
+  width: 12.4%;
+  padding: 42px 5px 32px;
+  
+	font-family: "MetaPro-Bold", sans-serif;
+	font-size: 12px;
+	text-transform: uppercase;
+	color: #8d8d8d;
+  text-align: left;
 }
 
 .shop-name,
@@ -103,7 +120,50 @@ p {
 	border-right: 2px solid #ebebeb;
 }
 
+.main-search {
+  width: 20.4%;
+  padding: 41px 5px 41px;
+  
+	font-family: "NeoSansProBold", sans-serif;
+	color: #c5c5c5;
+	font-size: 16px;
+}
+
+.shop-time {
+  width: 12%;
+  padding: 31px 5px 31px;
+  
+	font-family: "MetaPro-Normal", sans-serif;
+	font-size: 16px;
+	color: #8d8d8d;
+}
+
+.work-time {
+  font-family: "NeoSansProBold", sans-serif;
+	font-size: 15px;
+	color: #000000;
+}
+
+.shop-phone {
+  width: 17.5%;
+  padding: 28px 15px 27px;
+    
+	font-family: "MetaPro-Normal", sans-serif;
+	font-size: 16px;
+	color: #8d8d8d;
+	text-align: right;
+}
+
+.main-phone {
+	font-family: "NeoSansProBold", sans-serif;
+	font-size: 20px;
+	color: #000000;
+}
+
 .shop-call {
+  width: 12.5%;
+  padding: 40px 5px 40px;
+  
 	background: #ff0000;
 }
 
@@ -115,63 +175,10 @@ p {
 	text-transform: uppercase;
 }
 
-.shop-logo {
-	padding: 0 33px 0 107px;
-}
-
-.shop-name {
-	padding: 27px 33px 0 33px;
-	
-	font-family: "MetaPro-Bold", sans-serif;
-	font-size: 12px;
-	text-transform: uppercase;
-	color: #8d8d8d;
-}
-
-.main-search {
-	padding: 30px 170px 0 33px;
-	
-	font-family: "NeoSansProBold", sans-serif;
-	color: #c5c5c5;
-	font-size: 16px;
-}
-
-.shop-time {
-	padding: 23px 36px 0 120px;
-	
-	font-family: "MetaPro-Normal", sans-serif;
-	font-size: 16px;
-	color: #8d8d8d;
-}
-
-.work-time {
-	font-family: "NeoSansProBold", sans-serif;
-	font-size: 15px;
-	color: #000000;
-}
-
-.shop-phone {
-	padding: 18px 64px 0 60px;
-	
-	font-family: "MetaPro-Normal", sans-serif;
-	font-size: 16px;
-	color: #8d8d8d;
-	text-align: right;
-}
-
-.main-phone {
-	font-family: "NeoSansProBold", sans-serif;
-	font-size: 24px;
-	color: #000000;
-}
-
-.shop-call {
-	padding: 30px 62px 0 62px;
-}
-
 .main-cart {
-	padding: 30px 77px 0 143px;
-	
+  width: 12.5%;
+  padding: 40px 5px 40px;
+  
 	font-family: "NeoSansProBold", sans-serif;
 	font-size: 14px;
 	text-transform: uppercase;
