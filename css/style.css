@@ -95,15 +95,32 @@ p {
 .main-cart {
 	min-height: 80px;
 	
-	border: 1px solid red;
+	border: 0px solid red;
+}
+
+.shop-name,
+.main-search {
+	border-right: 2px solid #ebebeb;
+}
+
+.shop-call {
+	background: #ff0000;
+}
+
+.back-call {
+	font-family: "NeoSansProBold", sans-serif;
+	color: #fefefe;
+	font-size: 14px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .shop-logo {
-	padding: 0 33px 0 140px;
+	padding: 0 33px 0 107px;
 }
 
 .shop-name {
-	padding: 0 33px;
+	padding: 27px 33px 0 33px;
 	
 	font-family: "MetaPro-Bold", sans-serif;
 	font-size: 12px;
@@ -112,7 +129,7 @@ p {
 }
 
 .main-search {
-	padding: 0 170px 0 33px;
+	padding: 30px 170px 0 33px;
 	
 	font-family: "NeoSansProBold", sans-serif;
 	color: #c5c5c5;
@@ -120,23 +137,55 @@ p {
 }
 
 .shop-time {
-	padding: 0 36px 0 110px;
+	padding: 23px 36px 0 120px;
+	
+	font-family: "MetaPro-Normal", sans-serif;
+	font-size: 16px;
+	color: #8d8d8d;
+}
+
+.work-time {
+	font-family: "NeoSansProBold", sans-serif;
+	font-size: 15px;
+	color: #000000;
 }
 
 .shop-phone {
-	padding: 0 64px 0 36px;
+	padding: 18px 64px 0 60px;
+	
+	font-family: "MetaPro-Normal", sans-serif;
+	font-size: 16px;
+	color: #8d8d8d;
+	text-align: right;
+}
+
+.main-phone {
+	font-family: "NeoSansProBold", sans-serif;
+	font-size: 24px;
+	color: #000000;
 }
 
 .shop-call {
-	padding: 0 62px;
+	padding: 30px 62px 0 62px;
 }
 
 .main-cart {
-	padding: 0 77px 0 143px;
+	padding: 30px 77px 0 143px;
+	
+	font-family: "NeoSansProBold", sans-serif;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+.shopping-cart {
+	color: #8d8d8d;
+	text-decoration: none;
 }
 
 .header-menu {
-	padding: 0 10px;
+	background: #000000;
+	border-top: 1px solid #000000;
+	border-bottom: 1px solid #000000;
 }
 
 .main-menu {
@@ -146,7 +195,7 @@ p {
 
 .main-menu-dir {
 	width: 16.666666666666667%;
-	padding: 25px 5px 20px;
+	padding: 20px 0px 15px;
 	
 	background: #000000;
 	border-right: 1px solid #333333;
@@ -166,8 +215,12 @@ p {
 	color: #000000;
 }
 
-.global-filter {
-	padding: 0 10px;
+.global-filter a {
+	color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family: "NeoSansProBold", sans-serif;
+	font-size: 3vh;
 }
 
 .global-women,
@@ -177,9 +230,24 @@ p {
 	float: left;
 	
 	width: calc(100% / 3);
-	padding: 250px 10px;
+	padding: 11% 0;
 	
 	text-align: center;
+}
+
+.global-women {
+	background: url("../img/main/girls_uggs.jpg") no-repeat;
+	background-size: 100%;
+}
+
+.global-men {
+	background: url("../img/main/mens_uggs.jpg") no-repeat;
+	background-size: 100%;
+}
+
+.global-children {
+	background: url("../img/main/kids_uggs.jpg") no-repeat;
+	background-size: 100%;
 }
 
 .main-popular {
