@@ -292,13 +292,19 @@ p {
 .main-popular {
 	padding: 0 45px;
 	
-	background: #f8f8f8;
+	background: #f8f8f8 url("../img/main/bg.jpg") no-repeat;
+	Background-size: 100%;
 }
 
 .most-popular {
 	display: block;
+	padding: 50px 10px;
 	
+	font-family: "MetaPro-Normal", sans-serif;
+	font-size: 36px;
+	color: #000000;
 	text-align: center;
+	text-transform: uppercase;
 }
 
 .items {
@@ -308,14 +314,21 @@ p {
 	margin: 0 -15px;
 }
 
+.items li {
+	margin-bottom: 20px;
+}
+
 .item-card {
 	width: calc(100% / 5 - 50px);
 	min-width: 314px;
 	margin: 0 25px 50px;
+	padding: 20px 20px 0 20px;
 	
 	background: #ffffff;	
 	
 	text-align: center;
+	
+	cursor: pointer;
 }
 
 .item-card ul {
@@ -327,24 +340,52 @@ p {
 	list-style-type: none;
 }
 
+.item-img {
+	width: 100%;
+	height: 100%;
+}
+
 .item-more {
+	display: none;
+}
+
+.item-more a {
+	display: block;
+	width: 100%;
+	padding: 20px 10px;
 	
+	background: #ff0000;
+	
+	font-family: "MetaPro-Bold", sans-serif;
+	color: #ffffff;
+	font-size: 20px;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .item-title {
-	padding: 0 20px;
-	
 	font-family: "MetaPro-Bold", sans-serif;
 	color: #000000;
 	font-size: 14px;
+	text-align: left;
 }
 
 .item-price {
-	
+	font-family: "NeoSansProBold", sans-serif;
+	font-size: 24px;
+	color: #ff0000;
+	text-align: left;
 }
 
 .item-price-old {
-	
+	font-family: "NeoSansProBold", sans-serif;
+	font-size: 17px;
+	color: #afafaf;
+	text-decoration: line-through;
+}
+
+.item-card:hover .item-more {
+	display: none;
 }
 
 .main-about {
@@ -352,11 +393,38 @@ p {
 }
 
 .main-about-inner {
-	max-width: 1350px;
+	max-width: 1300px;
 	margin: 0 auto;
+	margin-bottom: 30px;
 	padding: 0 10px;
 	
 	background: #ffffff;
+}
+
+h2 {
+	padding: 70px 0 30px;
+	
+	font-family: "MetaPro-Bold", sans-serif;
+	font-size: 45px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+h3,
+h4 {
+	padding: 30px 0;
+	
+	font-family: "MetaPro-Bold", sans-serif;
+	font-size: 36px;
+	color: #000000;
+	text-transform: uppercase;
+}
+
+.main-about-inner p {
+	font-family: "MetaPro-Normal", sans-serif;
+	color: #4c4b4b;
+	font-size: 17px;
+	line-height: 24px;
 }
 
 footer {	
@@ -368,7 +436,7 @@ footer {
 	display: flex;
 	justify-content: space-between;
 	
-	max-width: 1350px;
+	max-width: 1300px;
 	margin: 0 auto;
 	margin-bottom: 40px;
 	padding: 0 10px;
@@ -401,6 +469,7 @@ footer {
 .socials {
 	width: 100%;
 	margin-bottom: 50px;
+	padding: 60px;
 	
 	background: #e4e4e4;
 	
@@ -409,6 +478,48 @@ footer {
 
 .socials li {
 	display: inline-block;
+	width: 52px;
+	height: 52px;
+	margin-right: 12px;
+	
+	border-radius: 50%;
+	border: 1px solid white;
+}
+
+.tm {
+	background: url("../img/main/socials.png");
+}
+
+.vm {
+	background: url("../img/main/socials.png");
+	background-position: -68px 0;
+}
+
+.in {
+	background: url("../img/main/socials.png");
+}
+
+.tw {
+	background: url("../img/main/socials.png");
+}
+
+.pt {
+	background: url("../img/main/socials.png");
+}
+
+.fb {
+	background: url("../img/main/socials.png");
+}
+
+.socials a {
+	display: inline-block;
+	width: 52px;
+	height: 52px;
+	
+	border: 1px solid red;
+	
+	vertical-align: top;
+	font-size: 0px;
 }
 
 .sub-title {
