@@ -83,14 +83,13 @@ p {
 	justify-content: flex-start;
 	align-items: center;
 	
-	min-width: 1040px;
-	max-height: 140px;
   padding: 0 10px;
   
   text-align: center;
 }
 
 .atributs {
+	flex-grow: 0.7;
 	padding: 10px 30px;
 	
 	border-right: 2px solid #ebebeb;
@@ -124,11 +123,16 @@ p {
 	vertical-align: middle;
 }
 
+.main-search {
+	border-right: 2px solid #ebebeb;
+}
+
 .main-search-link {
 	display: block;
-	padding: 39px 30px 38px 100px;
+	padding: 39px 30px 38px 80px;
 
-	border-right: 2px solid #ebebeb;
+	background: url("../img/main/search.png") no-repeat;
+	background-position: 10% 50%;
 	
 	font-family: "NeoSansProBold", sans-serif;
 	color: #c5c5c5;
@@ -148,6 +152,9 @@ p {
 .shop-time {
 	margin-right: 50px;
 	
+	background: url("../img/main/watch.png") no-repeat;
+	background-position: 5% 0;
+	
 	font-family: "MetaPro-Normal", sans-serif;
 	font-size: 16px;
 	color: #8d8d8d;
@@ -161,6 +168,9 @@ p {
 }
 
 .shop-phone {
+	background: url("../img/main/phone.png") no-repeat;
+	background-position: 4% 15%;
+	
 	font-family: "MetaPro-Normal", sans-serif;
 	font-size: 16px;
 	color: #8d8d8d;
@@ -175,7 +185,7 @@ p {
 
 .back-call {
 	display: block;
-	padding: 41px 50px;
+	padding: 41px 35px;
 	
 	background: #ff0000;
 	
@@ -186,15 +196,43 @@ p {
 	text-transform: uppercase;
 }
 
+.main-cart {
+	position: relative;
+	
+	max-width: 200px;
+}
+
 .shopping-cart {
 	display: block;
-	padding: 40px 100px 39px 30px;
+	padding: 41px 100px 41px 30px;
+	
+	background: url("../img/main/card.png") no-repeat;
+	background-position: 80% 50%;
 	
 	font-family: "NeoSansProBold", sans-serif;
 	font-size: 14px;
 	color: #8d8d8d;
 	text-decoration: none;
 	text-transform: uppercase;
+}
+
+.cart-counter {
+	position: absolute;
+	top: 20%;
+	right: 9%;
+	
+	display: block;
+	width: 25px;
+	height: 25px;
+	
+	background: #ff0000;
+	border-radius: 50%;
+	
+	font-family: "NeoSansProBold", sans-serif;
+	font-size: 12px;
+	color: #ffffff;
+	line-height: 25px;
+	vertical-align: middle;
 }
 
 .header-menu {
@@ -575,7 +613,6 @@ footer {
 	
 	.atributs {
 		padding: 35px 10px 36px;
-		border-right: 2px solid #ebebeb;
 	}
 	
 	.shop-time,
@@ -621,8 +658,9 @@ footer {
 		width: calc(100% / 4);
 	}
 	
-	.main-search	{
-		display: none;
+	.main-search-link {
+		padding-top: 70px;
+		padding-bottom: 70px;
 	}
 	
 	.shop-time-info {
