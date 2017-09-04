@@ -83,7 +83,7 @@ p {
 	justify-content: flex-start;
 	align-items: center;
 	
-	min-width: 1010px;
+	min-width: 1040px;
 	max-height: 140px;
   padding: 0 10px;
   
@@ -566,33 +566,6 @@ footer {
 	font-size: 15px;
 }
 
-@media screen and (max-width: 1660px) {
-	.atributs,
-	.shop-time-info,
-	.main-cart {
-		width: calc(100% / 4);
-	}
-	
-	.main-search,
-	.shop-time	{
-		display: none;
-	}
-	
-	.shop-time-info {
-		padding: 25px 30px 26px;
-	}
-}
-
-@media screen and (max-width: 1450px) {
-	.back-call {
-		padding: 53px 50px 54px;
-	}
-	
-	.shop-time-info {
-		padding: 37px 30px 38px;
-	}
-}
-
 @media screen and (max-width: 1170px) {
 	.atributs,
 	.shop-time-info,
@@ -600,12 +573,8 @@ footer {
 		width: calc(100% / 3);
 	}
 	
-	.shop-name {
-		display: none;
-	}
-	
 	.atributs {
-		padding: 39px 10px 40px;
+		padding: 35px 10px 36px;
 		border-right: 2px solid #ebebeb;
 	}
 	
@@ -621,7 +590,58 @@ footer {
 	}
 	
 	.back-call {
+		padding: 54px 50px;
+	}
+}
+
+@media screen and (max-width: 1258px) {
+  .shop-logo {
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 1450px) {
+  .atributs {
+		padding: 35px 10px 36px;
+	}
+  
+	.back-call {
 		padding: 62px 50px 63px;
+	}
+	
+	.shop-time-info {
+		padding: 37px 30px 38px;
+	}
+}
+
+@media screen and (max-width: 1660px) {
+	.atributs,
+	.shop-time-info,
+	.main-cart {
+		width: calc(100% / 4);
+	}
+	
+	.main-search	{
+		display: none;
+	}
+	
+	.shop-time-info {
+		padding: 25px 30px 26px;
+	}
+  
+  .shop-time,
+	.shop-phone {
+		display: block;
+		
+		text-align: left;
+	}
+  
+  .shop-time {
+    margin-bottom: 10px;
+  }
+	
+	.main-phone {
+		font-size: 17px;
 	}
 }
 
