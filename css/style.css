@@ -77,20 +77,21 @@ p {
 	padding: 0;
 }
 
-
 .main-info {
 	display: flex;
-	justify-content: flex-start;
+	justify-content: space-between;
 	align-items: center;
 	
   padding: 0 10px;
+	
+	/* border-top: 1px solid #ebebeb; */
   
   text-align: center;
 }
 
 .atributs {
-	flex-grow: 0.7;
-	padding: 10px 30px;
+	flex-grow: 0.6;
+	padding: 11px 30px 11px 20px;
 	
 	border-right: 2px solid #ebebeb;
 }
@@ -103,8 +104,16 @@ p {
 	font-family: "MetaPro-Bold", sans-serif;
 	font-size: 12px;
 	text-transform: uppercase;
+	text-align: left;
+}
+
+.shop-name a {
+	font-family: "MetaPro-Bold", sans-serif;
+	font-size: 12px;
 	color: #8d8d8d;
 	text-align: left;
+	text-decoration: none;
+	text-transform: uppercase;
 }
 
 .atributs ul,
@@ -120,16 +129,19 @@ p {
 .shop-time,
 .shop-phone {
 	display: inline-block;
+	
 	vertical-align: middle;
 }
 
 .main-search {
+	flex-grow: 0.55;
+	
 	border-right: 2px solid #ebebeb;
 }
 
 .main-search-link {
 	display: block;
-	padding: 39px 30px 38px 80px;
+	padding: 40px 30px 40px 50px;
 
 	background: url("../img/main/search.png") no-repeat;
 	background-position: 10% 50%;
@@ -140,17 +152,17 @@ p {
 }
 
 .shop-time-info {
-	flex-grow: 1;
-	padding: 23px 30px;
+	flex-grow: 0.6;
+	padding: 25px 30px;
 }
 
 .shop-time,
 .shop-phone {
-	padding-left: 50px;
+	padding-left: 40px;
 }
 
 .shop-time {
-	margin-right: 50px;
+	margin-right: 30px;
 	
 	background: url("../img/main/watch.png") no-repeat;
 	background-position: 5% 0;
@@ -179,13 +191,17 @@ p {
 
 .main-phone {
 	font-family: "NeoSansProBold", sans-serif;
-	font-size: 24px;
+	font-size: 21px;
 	color: #000000;
+}
+
+.shop-call {
+	flex-grow: 0.15;
 }
 
 .back-call {
 	display: block;
-	padding: 41px 35px;
+	padding: 41px 30px;
 	
 	background: #ff0000;
 	
@@ -197,9 +213,9 @@ p {
 }
 
 .main-cart {
-	position: relative;
+	flex-grow: 0.1;
 	
-	max-width: 200px;
+	position: relative;
 }
 
 .shopping-cart {
@@ -282,7 +298,7 @@ p {
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: "NeoSansProBold", sans-serif;
-	font-size: 3vh;
+	font-size: 24px;
 }
 
 .global-women,
@@ -298,18 +314,126 @@ p {
 }
 
 .global-women {
+	position: relative;
+	
 	background: url("../img/main/girls_uggs.jpg") no-repeat;
 	background-size: 100%;
 }
 
+.global-women:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	width: 100px;
+	height: 3px;
+	margin-left: -50px;
+	margin-top: -25px;
+	
+	background: #ffffff;
+	
+	opacity: 0.5;
+}
+
+.global-women:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	width: 100px;
+	height: 3px;
+	margin-left: -50px;
+	margin-top: 25px;
+	
+	background: #ffffff;
+	
+	opacity: 0.5;
+}
+
 .global-men {
+	position: relative;
+	
 	background: url("../img/main/mens_uggs.jpg") no-repeat;
 	background-size: 100%;
 }
 
+.global-men:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	width: 100px;
+	height: 3px;
+	margin-left: -50px;
+	margin-top: -25px;
+	
+	background: #ffffff;
+	
+	opacity: 0.5;
+}
+
+.global-men:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	width: 100px;
+	height: 3px;
+	margin-left: -50px;
+	margin-top: 25px;
+	
+	background: #ffffff;
+	
+	opacity: 0.5;
+}
+
 .global-children {
+	position: relative;
+	
 	background: url("../img/main/kids_uggs.jpg") no-repeat;
 	background-size: 100%;
+}
+
+.global-children:before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	width: 100px;
+	height: 3px;
+	margin-left: -50px;
+	margin-top: -25px;
+	
+	background: #ffffff;
+	
+	opacity: 0.5;
+}
+
+.global-children:after {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	
+	width: 100px;
+	height: 3px;
+	margin-left: -50px;
+	margin-top: 25px;
+	
+	background: #ffffff;
+	
+	opacity: 0.5;
+}
+
+.global-women:hover,
+.global-men:hover,
+.global-children:hover {
+	opacity: 0.8;
 }
 
 .main-popular {
@@ -328,6 +452,39 @@ p {
 	color: #000000;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+.most-popular-wrapper {
+	position: relative;
+	
+	width: 610px;
+	margin: 0 auto;
+}
+
+.most-popular::before {
+	content: "";
+	position: absolute;
+	top: 49%;
+	left: 0;
+	
+	width: 80px;
+	height: 2px;
+	
+	background: #000000;
+	opacity: 0.7;
+}
+
+.most-popular::after {
+	content: "";
+	position: absolute;
+	top: 49%;
+	right: 0;
+	
+	width: 80px;
+	height: 2px;
+	
+	background: #000000;
+	opacity: 0.7;
 }
 
 .items {
@@ -409,6 +566,10 @@ p {
 
 .item-card:hover .item-more {
 	display: none;
+}
+
+.item-card:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 2, 0.3);
 }
 
 .main-about {
@@ -520,7 +681,7 @@ footer {
 
 .in {
 	background: url("../img/main/socials.png");
-  background-position: -137px 0;
+  background-position: -135px 0;
 }
 
 .tw {
@@ -535,6 +696,36 @@ footer {
 
 .fb {
 	background: url("../img/main/socials.png");
+  background-position: -343px 0;
+}
+
+.tm:hover {
+	background: url("../img/main/socials_hr.png");
+  background-position: 1px 0;
+}
+
+.vm:hover {
+	background: url("../img/main/socials_hr.png");
+	background-position: -68px 0;
+}
+
+.in:hover {
+	background: url("../img/main/socials_hr.png");
+  background-position: -135px 0;
+}
+
+.tw:hover {
+	background: url("../img/main/socials_hr.png");
+  background-position: -205px 0;
+}
+
+.pt:hover {
+	background: url("../img/main/socials_hr.png");
+  background-position: -273px 0;
+}
+
+.fb:hover {
+	background: url("../img/main/socials_hr.png");
   background-position: -343px 0;
 }
 
@@ -587,12 +778,17 @@ footer {
 
 .sub-catalog li a,
 .sub-additionally li a {
-	border-bottom: 1px solid red;
+	border-bottom: 1px solid #ff0000;
 	
 	font-family: "MetaPro-Normal", sans-serif;
 	text-decoration: none;
 	color: #000000;
 	font-size: 15px;
+}
+
+.sub-catalog li a:hover,
+.sub-additionally li a:hover {
+	border-bottom: 1px solid #000000;
 }
 
 .sub-contacts li {
@@ -615,12 +811,12 @@ footer {
 		padding: 35px 10px 36px;
 	}
 	
-	.shop-time,
+	/*.shop-time,
 	.shop-phone {
 		display: block;
 		
 		text-align: left;
-	}
+	}*/
 	
 	.main-phone {
 		font-size: 17px;
@@ -651,28 +847,32 @@ footer {
 	}
 }
 
-@media screen and (max-width: 1660px) {
+@media screen and (max-width: 1670px) {
 	.atributs,
+	.main-search,
 	.shop-time-info,
-	.main-cart {
+	.shop-call,
+	.main-cart	{
 		width: calc(100% / 4);
 	}
 	
 	.main-search-link {
 		padding-top: 70px;
 		padding-bottom: 70px;
+		
+		font-size: 0;
 	}
 	
 	.shop-time-info {
 		padding: 25px 30px 26px;
 	}
   
-  .shop-time,
+  /*.shop-time,
 	.shop-phone {
 		display: block;
 		
 		text-align: left;
-	}
+	}*/
   
   .shop-time {
     margin-bottom: 10px;
