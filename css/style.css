@@ -69,6 +69,17 @@ p {
 	padding: 0;
 }
 
+header,
+.main-sales,
+.global-filter,
+.main-popular,
+.main-about,
+.socials,
+footer {
+	min-width: 700px;
+}
+
+
 .main-info {
 	display: flex;
 	justify-content: space-between;
@@ -290,7 +301,8 @@ p {
   padding: 16% 0;
   
   background: url("../img/main/sale.jpg") no-repeat;
-  background-size: 100%;
+  background-size: 100% 100%;
+	background-position: cover;
 }
 
 .global-filter a {
@@ -308,6 +320,7 @@ p {
 	float: left;
 	
 	width: calc(100% / 3);
+	min-width: 233.33px;
 	padding: 11% 0;
 	
 	text-align: center;
@@ -317,7 +330,7 @@ p {
 	position: relative;
 	
 	background: url("../img/main/girls_uggs.jpg") no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 
 .global-women:before {
@@ -356,7 +369,7 @@ p {
 	position: relative;
 	
 	background: url("../img/main/mens_uggs.jpg") no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 
 .global-men:before {
@@ -395,7 +408,7 @@ p {
 	position: relative;
 	
 	background: url("../img/main/kids_uggs.jpg") no-repeat;
-	background-size: 100%;
+	background-size: 100% 100%;
 }
 
 .global-children:before {
@@ -813,6 +826,10 @@ footer {
   }
 }
 
+@media screen and (max-width: 1420px) {
+  
+}
+
 @media screen and (max-width: 1250px) {
 	.shop-name {
 		display: none;
@@ -843,6 +860,10 @@ footer {
 }
 
 @media screen and (max-width: 865px) {
+	.atributs {
+		padding: 17px 30px 16px 20px;
+	}
+	
 	.shop-phone,
   .main-phone  {
     padding-left: 0;
@@ -857,6 +878,10 @@ footer {
     
     font-size: 12px;
   }
+	
+	.main-cart {
+		width: 160px;
+	}
 }
 
 @media screen and (max-width: 695px) {
