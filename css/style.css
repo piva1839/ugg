@@ -306,7 +306,7 @@ footer {
 }
 
 .global-filter a {
-	color: #ffffff;
+  color: #ffffff;
 	text-decoration: none;
 	text-transform: uppercase;
 	font-family: "NeoSansProBold", sans-serif;
@@ -316,11 +316,11 @@ footer {
 .global-women,
 .global-men,
 .global-children {
-	display: block;
-	float: left;
+	display: inline-block;
 	
 	width: calc(100% / 3);
 	min-width: 233.33px;
+  margin-right: -5px;
 	padding: 11% 0;
 	
 	text-align: center;
